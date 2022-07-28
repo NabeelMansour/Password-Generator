@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background: #ECFDF5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+h1 {
+    position: absolute;
+    color: #2B283A;
+    width: 354px;
+    height: 80px;
+    top: 115px;
+    left: 52px;
+    font-weight: 800;
+    font-family: Karla;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+h3{
+    position: absolute;
+    color: #6B7280;
+    width: 372px;
+    height: 28px;
+    top: 200px;
+    left: 52px;
+    
+}
+
+span {
+    color: #10B981;
+}
+
+.btn {
+    position: absolute;
+    width: 191px;
+    height: 42px;
+    top: 284px;
+    left: 52px;
+    border-radius: 6px;
+    border-bottom: 1px solid #D5D4D8;
+    background: #10B981;
+    color: #fff;
+    border: none;
+}
