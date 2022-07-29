@@ -1,51 +1,185 @@
 body {
-    margin: 0;
-    background: #ECFDF5;
+  margin: 0;
+  padding: 0;
+  background: #000;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
+  margin: auto;
+  position: relative;
+  background: #ecfdf5;
+  width: 550px;
+  height: 550px;
+  top: 64px;
+  left: 61px;
+  border-radius: 1rem;
 }
 
 h1 {
-    position: absolute;
-    color: #2B283A;
-    width: 354px;
-    height: 80px;
-    top: 115px;
-    left: 52px;
-    font-weight: 800;
-    font-family: Karla;
-    font-size: 40px;
-    line-height: 40px;
+  position: absolute;
+  color: #2b283a;
+  width: 380px;
+  height: 80px;
+  top: 115px;
+  left: 52px;
+  font-family: Karla;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: 'Karla', sans-serif;
+  font-style: bold;
+  letter-spacing: -2px;
 }
 
-h3{
-    position: absolute;
-    color: #6B7280;
-    width: 372px;
-    height: 28px;
-    top: 200px;
-    left: 52px;
-    
+.secondHead {
+  position: absolute;
+  color: #6b7280;
+  width: 372px;
+  height: 28px;
+  top: 205px;
+  left: 52px;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 span {
-    color: #10B981;
+  color: #10b981;
+}
+
+.border {
+  position: absolute;
+  border-bottom: 1px solid #d5d4d8;
+  width: 446px;
+  top: 361px;
+  left: 52px;
 }
 
 .btn {
-    position: absolute;
-    width: 191px;
-    height: 42px;
-    top: 284px;
-    left: 52px;
-    border-radius: 6px;
-    border-bottom: 1px solid #D5D4D8;
-    background: #10B981;
-    color: #fff;
-    border: none;
+  position: absolute;
+  width: 191px;
+  height: 42px;
+  top: 284px;
+  left: 52px;
+  border-radius: 6px;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  padding: 9px 17px 9px 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0 9px #999;
+}
+
+#password1 {
+  position: absolute;
+  top: 396px;
+  left: 52px;
+  width: 211px;
+  height: 39px;
+  border-radius: 6px;
+  background: #065f46;
+  border: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+#password1:focus,
+#password2:focus {
+  outline: none;
+}
+
+#password2 {
+  position: absolute;
+  top: 396px;
+  left: 287px;
+  width: 211px;
+  height: 39px;
+  border-radius: 6px;
+  background: #065f46;
+  border: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn,
+#password1,
+#password2,
+.copy,
+.copy2 {
+  cursor: pointer;
+}
+
+.btn:active,
+.copy:active,
+.copy2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btn:hover {
+  background: #3e8e41;
+}
+
+.copy {
+  position: absolute;
+  top: 470px;
+  left: 115px;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  padding: 7px 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0 9px #999;
+  border-radius: 6px;
+}
+
+.copy2 {
+  position: absolute;
+  top: 470px;
+  left: 350px;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  padding: 7px 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0 9px #999;
+  border-radius: 6px;
+}
+
+.pass_text1 {
+  position: absolute;
+  top: 355px;
+  left: 55px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #10b981;
+}
+
+.pass_text2 {
+  position: absolute;
+  top: 356px;
+  left: 290px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #10b981;
+}
+
+@media (max-width) {
+  .container {
+    width: auto;
+  }
 }

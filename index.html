@@ -1,13 +1,35 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-        <h1>Generate a <br><span>Random password</span></h1>
-        <h3>Never use an insecure password again</h3>
-        <button class="btn">Generate password</button>
-        </div>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a<br /><span>random password</span></h1>
+      <h3 class="secondHead">Never use an insecure password again</h3>
+      <button class="btn" id="generate-el" onclick="generatePasswordOne()">
+        Generate password
+      </button>
+      <div class="border"></div>
+      <p class="pass_text1">Password 1</p>
+      <input type="text" id="password1" />
+      <p class="pass_text2">Password 2</p>
+      <input type="text" id="password2" />
+
+      <button id="button" class="copy" onclick="copyPassword()">Copy</button>
+
+      <button id="button" class="copy2" onclick="copyPassword2()">Copy</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
